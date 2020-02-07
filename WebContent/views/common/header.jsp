@@ -10,12 +10,6 @@
 	
 %>
 
-
-<!DOCTYPE html>
-<html>
-
-<head>
-
 			<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
 			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.11/css/lightgallery.min.css">
 		
@@ -35,9 +29,7 @@
 				     padding-bottom: 20px;
 				}
 			</style>
-</head>
 
-<body>
 	<!--################ Start Header Area ########-->
 	<header id="header" class="fixed-top" >
 		<div class="header-top">
@@ -208,10 +200,14 @@
 		function Plogin(){	
 			$('#loginForm').submit();
 		}
+
+
+		//엔터로 로그인 하자.
+		$('#loginForm').keydown(function(event){
+			if(event.which == 13){
+				$('#loginForm').submit();
+				return false; //예외적인 상황을 위해 확실히 종료.
+			}
+		});
 	</script>
 
-
-
-</body>
-
-</html>

@@ -39,21 +39,24 @@
     <script>
 
      $('document').ready(function () {
-    	$('.tab_container').append('<h1>맹구 ㅋㅋㅋㅋㅋㅋ</h1><img src="../../resources/img/member/tab/w.jpg" alt="맹구">');
-     
+    	$('.tab_container').append('<h1>맹구 ㅋㅋㅋㅋㅋㅋ</h1><img id="m9" src="../../resources/img/member/tab/w.jpg" alt="맹구" width=""> ');
+    	$('#m9').css('height','500px');
+
+    	$('.tab_Chat').load("tab/chat.jsp");
+
         $("ul.tabs li").click(function () {
         	$(".tab_content").hide();
-        	
+
             $("ul.tabs li").removeClass("active").css("color", "#333");
             $(this).addClass("active").css("color", "green");
-            
+
             console.log($(this).attr('rel'));
             console.log($('ul.tabs li.active').attr('rel'));
-            
+
             $(".tab_container").load("tab/"+$('ul.tabs li.active').attr('rel')+".jsp");
-           
+
             $(".tab_content").fadeIn();
-            
+
         });
     });
 
@@ -88,6 +91,7 @@
 
  <!--start tab area-->
     <div id="t_container">
+    	<div class="container">
         <ul class="tabs">
             <li rel="tab1">회원 정보 관리</li>
             <li rel="tab2">호텔 예약 조회</li>
@@ -96,15 +100,27 @@
             <li rel="tab5">펫신져</li>
             <li rel="tab6">펫튜브</li>
         </ul>
-        
-        
-        <div class="tab_container">
-        	<!-- 요기에 불러옴 -->
+    	</div> <!-- container.tabs -->
+    
+    <div class="containder">
+     <div class="row">      
+        <div class="col-md-8">
+	        <div class="tab_container">
+	        	<!-- 요기에 불러옴 -->
+	        	
+	        </div><!-- .tab_container -->
         </div>
         
-        <!-- .tab_container -->
-    </div>
-    <!-- #container -->
+        <div class="col-md-4">
+			
+			<div class="tab_Chat">
+				<h1> 채팅창 영역</h1>
+				<!-- 채팅창 영역 -->
+			</div>        
+        </div> <!--  col md 4 -->
+        </div> <!-- row -->
+    </div> <!-- container.row -->
+    </div><!-- #t_container -->
 </div>
 
 <script>

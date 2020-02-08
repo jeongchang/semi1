@@ -16,10 +16,13 @@
 	<!-- Site Title -->
 	<title>Petner+</title>
 </head>
+
 <style>
 	.home-banner-area {
   background: url(/PETNER/resources/img/dogcat.jpg) no-repeat center fixed !important;
   background-size: cover; }
+  
+
 </style>
 
 

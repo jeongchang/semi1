@@ -26,6 +26,14 @@
     		$('div.tab_content').fadeIn();
     	});
     </script>
+    
+    <style>
+    	  img {
+		    max-width: 100%;
+		    max-height: 100%;
+		}
+    	
+    </style>
  			<div id="tab1" class="tab_content"><br>
  			<h1> tab2.jsp 임당</h1>
                 <div class="map_text">

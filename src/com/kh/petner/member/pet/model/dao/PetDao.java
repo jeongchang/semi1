@@ -117,6 +117,7 @@ public class PetDao {
 						, rset.getInt("PET_WEIGHT")
 						, rset.getString("PET_PIC")
 						, rset.getString("PET_TOP")
+						, rset.getInt("PET_ID")
 						);
 				
 				plist.add(p);

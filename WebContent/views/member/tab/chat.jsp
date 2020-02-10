@@ -1,3 +1,4 @@
+<%@page import="com.kh.petner.member.model.vo.Member"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
@@ -7,26 +8,33 @@
     pageEncoding="UTF-8"%>
 
 <!--  채팅창 크기 --> 
-
-	 <style>
-	 	#_chatbox{
-	 		height : 500;
-	 	}
-	 </style>
 	 
-<h1>불러와 졌어염!!!</h1>
     <!-- 로그인한 상태일 경우와 비로그인 상태일 경우의 chat_id설정 -->
-    <c:if test="${(login.id ne '') and !(empty login.id)}">
+<%--     
+	<c:if test="${(login.id ne '') and !(empty login.id)}">
         <input type="hidden" value='${login.id }' id='chat_id' />
     </c:if>
     <c:if test="${(login.id eq '') or (empty login.id)}">
         <input type="hidden" value='<%=session.getId().substring(0, 6)%>'
             id='chat_id' />
-    </c:if>
+    </c:if> 
+    --%>
+    
+    <!-- 항상 로그인 상태이다. -->
+    <!-- 익명으로 사용할 경우 -->
+    <!--
+    <input type="hidden" value='<%=session.getId().substring(0, 6)%>'
+            id='chat_id' />
+            -->
+            
+            <!-- 익명이 아닌 경우 -->
+    <input type="hidden" value='<%=((Member)session.getAttribute("member")).getUserName()%>'
+            id='chat_id' />
+    
     <!--     채팅창 -->
-    <div id="_chatbox" style="display: none">
+    <div id="_chatbox" style="display: none;">
         <fieldset>
-            <div id="messageWindow"></div>
+            <div id="messageWindow" style="height:400px; overflow:scroll"  ></div>
             <br /> <input id="inputMessage" type="text" onkeyup="enterkey()" />
             <input type="submit" value="send" onclick="send()" />
         </fieldset>
@@ -39,7 +47,10 @@
         "click" : function() {
             if ($(this).attr("src") == "/PETNER/resources/img/member/tab/chat.jpg") {
                 $(".chat").attr("src", "/PETNER/resources/img/member/tab/chathide.jpg");
-                $("#_chatbox").css("display", "block");
+                $("#_chatbox").css({
+                	"display":"block"
+                	, "height" : "500px"
+                });
             } else if ($(this).attr("src") == "/PETNER/resources/img/member/tab/chathide.jpg") {
                 $(".chat").attr("src", "/PETNER/resources/img/member/tab/chat.jpg");
                 $("#_chatbox").css("display", "none");
@@ -47,6 +58,8 @@
         }
     });
 </script>
+
+
 <script type="text/javascript">
     var textarea = document.getElementById("messageWindow");
     var webSocket = new WebSocket('ws://localhost:8888/PETNER/broadcasting');

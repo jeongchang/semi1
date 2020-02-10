@@ -4,4 +4,4 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
     
-<h1>tab2 임당</h1>
+<h1>펫튜브 임당</h1>

@@ -4,4 +4,4 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
     
-<h1>tab2 임당</h1>
+<h1>요거슨 호텔 예약 나오고 진행하자</h1>

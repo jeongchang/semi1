@@ -39,8 +39,8 @@
     <script>
 
      $('document').ready(function () {
-    	$('.tab_container').append('<h1>맹구 ㅋㅋㅋㅋㅋㅋ</h1><img id="m9" src="../../resources/img/member/tab/w.jpg" alt="맹구" width=""> ');
-    	$('#m9').css('height','500px');
+    	$('.tab_container').html('<h1>맹구 ㅋㅋㅋㅋㅋㅋ</h1><img id="m9" src="../../resources/img/member/tab/w.jpg" alt="맹구" style="max-width:100%;"> ');
+		
 
     	$('.tab_Chat').load("tab/chat.jsp");
 
@@ -104,19 +104,14 @@
     
     <div class="containder">
      <div class="row">      
-        <div class="col-md-8">
-	        <div class="tab_container">
+        <div class="tab_container col-md-8" style="width:100%;">
 	        	<!-- 요기에 불러옴 -->
-	        	
-	        </div><!-- .tab_container -->
-        </div>
+
+        </div> <!-- .tab_container -->
         
-        <div class="col-md-4">
-			
-			<div class="tab_Chat">
+        <div class="col-md-4 tab_Chat">
 				<h1> 채팅창 영역</h1>
-				<!-- 채팅창 영역 -->
-			</div>        
+				<!-- 채팅창 영역 --> 
         </div> <!--  col md 4 -->
         </div> <!-- row -->
     </div> <!-- container.row -->

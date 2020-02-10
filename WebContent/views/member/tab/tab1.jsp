@@ -34,11 +34,11 @@
 		}
     	
     </style>
- 			<div id="tab1" class="tab_content"><br>
+ 			<div id="tab1" class="tab_content" style="width:100%;"><br>
  			<h1> tab2.jsp 임당</h1>
-                <div class="map_text">
-                    <div class="progress-table-wrap" style="text-align: center;">
-                        <form action="/PETNER/pDelete.me" method="post" id="delForm">
+                <div class="map_text" style="width:100%;">
+                    <div class="progress-table-wrap" style="text-align: center; width:100%;" >
+                        <form action="/PETNER/pDelete.me" method="post" id="delForm" style="width:100%;">
                             <div class="mt-10">
                                 <input type="text" name="USER_EMAIL"  
                                 required class="single-input" disabled value="회원 EMAIL : <%=mp.getUserEmail() %>"
@@ -69,7 +69,7 @@
                                 	<div class="row"> 
                                 		<% for(Pet p : plist) { %>
                                 		<div>
-                                		<div class="card s-3" style="width: 250px; border:1px solid black;"> 
+                                		<div class="card s-2" style="width: 208px; border:1px solid black;"> 
                                 			<img src="/PETNER/resources/img/member/pet/<%=p.getPetPic() %>" 
                                 						alt="프로필 사진" class="card-img-top" style="height:248px"> 
                                 			<div class="card-body"> <h4 class="card-title"><%=p.getPetName() %></h4> 

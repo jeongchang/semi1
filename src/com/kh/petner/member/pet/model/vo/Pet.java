@@ -12,7 +12,45 @@ public class Pet {
 	private String petPic;
 	private String petTop;
 	private Date petDate;
+	private int petId;
 	
+	public Pet(String userEmail, String petName, String petType, Date petBirth, String petProfile, int petWeight,
+			String petPic, String petTop, Date petDate, int petId) {
+		super();
+		this.userEmail = userEmail;
+		this.petName = petName;
+		this.petType = petType;
+		this.petBirth = petBirth;
+		this.petProfile = petProfile;
+		this.petWeight = petWeight;
+		this.petPic = petPic;
+		this.petTop = petTop;
+		this.petDate = petDate;
+		this.petId = petId;
+	}
+
+	public int getPetId() {
+		return petId;
+	}
+
+	public Pet(String userEmail, String petName, String petType, Date petBirth, String petProfile, int petWeight,
+			String petPic, String petTop, int petId) {
+		super();
+		this.userEmail = userEmail;
+		this.petName = petName;
+		this.petType = petType;
+		this.petBirth = petBirth;
+		this.petProfile = petProfile;
+		this.petWeight = petWeight;
+		this.petPic = petPic;
+		this.petTop = petTop;
+		this.petId = petId;
+	}
+
+	public void setPetId(int petId) {
+		this.petId = petId;
+	}
+
 	public Pet(String userEmail, String petName, String petType, Date petBirth, String petProfile, int petWeight,
 			String petPic, String petTop) {
 		super();

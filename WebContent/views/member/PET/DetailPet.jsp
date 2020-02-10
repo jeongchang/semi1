@@ -63,7 +63,7 @@
 							<div class="col-sm-6 mb-3 mb-sm-0" > <!-- 이름 -->
 								<div id="asle" style="height:248px; width:248px; border:2px solid balck">
 
-									<img class="card-top-img " height="170px" width="255px" alt="프로필사진" style="border:1px sold black"
+									<img class="card-top-img " height="248px" width="208px" alt="프로필사진" style="border:1px sold black"
 										id="profilePic" src="../../../resources/img/member/pet/default.jpg">		
 									
 									<br>

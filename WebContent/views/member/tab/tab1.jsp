@@ -22,7 +22,7 @@
     
     %>
     <script>
-    	$(function(){
+    	$(function(){	//사라지게 하기
     		$('div.tab_content').fadeIn();
     	});
     </script>
@@ -34,7 +34,8 @@
 		}
     	
     </style>
- 			<div id="tab1" class="tab_content" style="width:100%;"><br>
+    
+ 			<div id="tab1" class="tab_content" style="width:1300px;"><br>
  			<h1> tab2.jsp 임당</h1>
                 <div class="map_text" style="width:100%;">
                     <div class="progress-table-wrap" style="text-align: center; width:100%;" >
@@ -65,8 +66,8 @@
 
 
                                 
-                                <div class="container"> 
-                                	<div class="row"> 
+                                <div class="container"  style="margin:0;"> 
+                                	<div class="row" style="width:1300px;"> 
                                 		<% for(Pet p : plist) { %>
                                 		<div>
                                 		<div class="card s-2" style="width: 208px; border:1px solid black;"> 

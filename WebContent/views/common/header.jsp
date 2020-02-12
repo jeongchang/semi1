@@ -7,7 +7,6 @@
 <%
 	 Member m = (Member)session.getAttribute("member"); 
 
-	
 %>
 
 			<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
@@ -65,7 +64,7 @@
 									<% } %>
 								| 	&nbsp;&nbsp; 
 									<a href='/PETNER/mpServlet.mp'  
-									onClick="window.open(this.href, '', 'width=1280, height=720'); return false;">MyPage</a>
+									onClick="window.open(this.href, '', 'width=1600, height=900'); return false;">MyPage</a>
 								| 	<a style="padding-left:10px;" href="/PETNER/Plogout.me"> LogOut</a>
 							</li>
 						</ul>

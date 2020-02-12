@@ -1,9 +1,15 @@
 package com.kh.petner.member.model.vo;
 
+import java.io.Serializable;
 import java.sql.Date;
 
-public class Member {
+public class Member implements Serializable{
 	
+	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -75111884155896604L;
 	
 	//멤버 변수
 	private String userEmail;		//email겸 ID

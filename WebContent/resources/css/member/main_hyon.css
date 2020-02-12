@@ -1,4 +1,4 @@
- /*main css _ 현아 추가*/
+ /*main css _ �쁽�븘 異붽�*/
  #logo a img {
     width: 60px;
     height: 60px;
@@ -48,14 +48,14 @@ ul.tabs {
     list-style: none;
     border-bottom: 1px solid #eee;
     border-left: 1px solid #eee;
-    width: 1000px;
+    width: 1300px;
     font-size:13.5px;
 }
 ul.tabs li {
     float: left;
     text-align:center;
     cursor: pointer;
-    width:33%;
+    width:20%;
     height: 50px;
     line-height: 50px;
     border: 1px solid #eee;
@@ -82,7 +82,7 @@ ul.tabs li.active {
     display: none;
 }
 .tab_container .tab_content ul {
-    width:1000px;
+    width:1300px;
     margin:0px;
     padding:0px;
 }
@@ -106,7 +106,7 @@ ul.tabs li.active {
 }
 
 .map_text {
-    width: 1000px;
+    width: 1300px;
     font-size: 15px;
 }
 .tab_content p {
@@ -163,7 +163,7 @@ ul.tabs li.active {
     font-weight: normal;
 }
 
-/*후기 코멘트 부분*/
+/*�썑湲� 肄붾찘�듃 遺�遺�*/
 .comments-area {
     width: 1000px;
     height: 800px;

@@ -26,7 +26,8 @@
     <input type="hidden" value='<%=session.getId().substring(0, 6)%>'
             id='chat_id' />
             -->
-            
+ 		<script src="/PETNER/resources/js/vendor/jquery-3.4.1.min.js" type="text/javascript"></script>
+ 		           
             <!-- 익명이 아닌 경우 -->
     <input type="hidden" value='<%=((Member)session.getAttribute("member")).getUserName()%>'
             id='chat_id' />
@@ -34,7 +35,7 @@
     <!--     채팅창 -->
     <div id="_chatbox" style="display: none;">
         <fieldset>
-            <div id="messageWindow" style="height:400px; overflow:scroll"  ></div>
+            <div id="messageWindow" style="height:650px; overflow:scroll"  ></div>
             <br /> <input id="inputMessage" type="text" onkeyup="enterkey()" />
             <input type="submit" value="send" onclick="send()" />
         </fieldset>
@@ -45,16 +46,16 @@
 <script>
     $(".chat").on({
         "click" : function() {
-            if ($(this).attr("src") == "/PETNER/resources/img/member/tab/chat.jpg") {
-                $(".chat").attr("src", "/PETNER/resources/img/member/tab/chathide.jpg");
+//            if ($(this).attr("src") == "/PETNER/resources/img/member/tab/chat.jpg") {
+                $(".chat").css("display", "none");
                 $("#_chatbox").css({
                 	"display":"block"
                 	, "height" : "500px"
                 });
-            } else if ($(this).attr("src") == "/PETNER/resources/img/member/tab/chathide.jpg") {
-                $(".chat").attr("src", "/PETNER/resources/img/member/tab/chat.jpg");
-                $("#_chatbox").css("display", "none");
-            }
+//            } else if ($(this).attr("src") == "/PETNER/resources/img/member/tab/chathide.jpg") {
+//                $(".chat").attr("src", "/PETNER/resources/img/member/tab/chat.jpg");
+//                $("#_chatbox").css("display", "none");
+//            }
         }
     });
 </script>

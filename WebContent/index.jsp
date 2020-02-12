@@ -46,6 +46,23 @@
 		</div>
 	</section>
 	<!--######## End banner Area ########-->
+	
+	
+		<!--######## start banner Area ########-->
+	<section class="home-banner-area relative" id="home">
+		<div class="container">
+			<div class="row fullscreen d-flex align-items-center">
+				<div class="banner-content col-lg-9 col-md-12">
+					<h1>
+						Petner + <br> With <br> Your Life
+					</h1>
+					<a href="#" class="primary-btn header-btn text-capitalize mt-10">hire us now!</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--######## End banner Area ########-->
+	
 
 	<!--######## Start Latest News Area ########-->
 	<section class="latest-news-area section-gap">

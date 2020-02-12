@@ -1,8 +1,13 @@
 package com.kh.petner.member.pet.model.vo;
 
+import java.io.Serializable;
 import java.sql.Date;
 
-public class Pet {
+public class Pet implements Serializable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 3442168076282237283L;
 	private String userEmail;
 	private String petName;
 	private String petType;

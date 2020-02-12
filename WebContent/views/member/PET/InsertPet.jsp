@@ -68,12 +68,12 @@
 									
 									<br>
 									<input type="file" name="petPic" id="petPic" accept=".gif, .jpg, .png" onchange="LoadImg(this);"/>
-									<br>
-									<input type="text" class="form-control form-control-user" name="petName" placeholder="이름을 입력해주세요.*" required>
+									
 								</div>
 							</div>
 							
 							<div class="col-sm-6">
+							<input type="text" class="form-control form-control-user" name="petName" placeholder="이름을 입력해주세요.*" required><br>
 								<input type="date" class="form-control form-control-user" name="petBirth" placeholder="생일을 입력해주세요" required> <br>		
 								<input type="text" class="form-control form-control-user" name="petProfile" placeholder="종 혹은 간단한 소개.*" required>
 								
